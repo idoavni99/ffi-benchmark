@@ -8,5 +8,5 @@ const lib = koffi.load(getLibraryByPlatform("./lib"));
 const sleep = lib.func("sleep", "int", ["int"]);
 
 console.time("MEASURE");
-sleep(0);
+sleep(1);
 console.timeEnd("MEASURE");
