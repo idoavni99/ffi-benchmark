@@ -5,7 +5,7 @@ const getLibraryByPlatform = (libPath) =>
 
 const lib = koffi.load(getLibraryByPlatform("./lib"));
 
-const sleep = lib.func("sleep", "int", ["int"]);
+const sleep = lib.func("sleep", "long", ["long"]);
 
 console.time("MEASURE");
 sleep(1);
